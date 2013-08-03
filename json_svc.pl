@@ -39,8 +39,8 @@ handle_rpc(Request) :-
 evaluate(PrologIn, PrologOut) :-
 	PrologIn = json([jsonrpc=Version, params=[Query], id=Id, method=MethodName]),
 	MethodName = eval,
-  atom_to_term(Query, Term, Bindings),
-  Goal =.. [findall, Bindings, Term, Result],
-  call(Goal),
-  format(atom(StringResult), "~q", Result),
+	atom_to_term(Query, Term, Bindings),
+	Goal =.. [findall, Bindings, Term, Result],
+	call(Goal),
+	format(atom(StringResult), "~q", Result),
 	PrologOut = json([jsonrpc=Version, result=StringResult, id=Id]).
