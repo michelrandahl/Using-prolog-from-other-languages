@@ -3,9 +3,10 @@ Using-prolog-from-other-languages
 json_svc.pl
 is a sample which shows how to setup a prolog (swi-prolog) jsonrpc service.
 In this sample the service hosts a sudoku solver program, but can be replaced/extended with whatever you like (try it out with the python sample)
+
 (the sample is inspired by this blog post: http://technogems.blogspot.dk/2011/08/easy-cross-platform-inter-process.html)
 
-you run the service by typing:
+you run the service in prolog by typing:
 
 ?- [json_svc].
 
