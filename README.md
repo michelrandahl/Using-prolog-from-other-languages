@@ -14,7 +14,7 @@ you run the service in prolog by typing:
 
 
 python_jsonrpc_sample.py
-is a sample python script which shows how to use the jsonrpclib to communicate with prolog
+is a sample python script which shows how to use the jsonrpclib to communicate with the prolog service from the json_svc.pl file
 
 just run it in the console by typing:
 
